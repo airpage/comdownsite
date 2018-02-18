@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="ko" data-lang="ko" style="background-color: #ffffff">
+<head>
+    <meta charset="utf-8">       
+    <META http-equiv="Expires" content="-1"> 
+		<META http-equiv="Pragma" content="no-cache"> 
+		<META http-equiv="Cache-Control" content="No-Cache">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="keywords" content="PC 종료, 원격, 조종, 실시간, 제어, Turn off, shutdown, PC, remote, Control, realtime" />
+		<meta name="description" content="PC를 쉽게 끄자!" />
+		<link rel="icon" type="image/x-icon" href="comdown.ico" />
+		<link rel="icon" type="image/png" href="comdown.png" />
+		<link rel="icon" type="image/gif" href="comdown.gif" />
+		<meta name="theme-color" content="#656565">
+		<meta property="og:locale" content="ko_KR" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://pc.airpage.org/" />
+		<meta property="og:site_name" content="컴다운" />
+		<meta property="og:title" content="컴다운 서비스!" />
+		<meta property="og:image" content="title.png" />
+		<meta property="og:description" content="PC를 쉽게 끄자!" />	
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  	
+  	<link rel="stylesheet" href="css/d.css">
+  	<link rel="stylesheet" href="css/font-awesome.min.css">  	
+		<script src="jquery.min.js"></script>		
+		<script type="text/javascript" charset="utf-8" src="language.js"></script>	
+		<script type="text/javascript" charset="utf-8" src="controller.js"></script>	
+    <title>컴다운</title>    
+</head>
+<body>  
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="container">   	
+				<div class="row">
+					<div class="col-sm-12">
+						<p></p>			
+						<div class="pull-right">
+			   			<a href=index.html>English</a>
+			   		</div>
+			   	</div>
+			 	</div>						
+	  	<div class="jumbotron">	  					
+				<div class="row">								
+					<div class="col-sm-12">	
+							<center>
+		  				<h5><img src=title_iconb.png></span>&nbsp;PC를 쉽게 끄자 !</h5>
+	    				<h4><label>pc.airpage.org</label></h4>
+	    				<div class="loader"></div>    							  			
+			  			</center>
+	    			</div>
+	    	</div>    		
+  		</div>
+	
+	  	<div class="row">
+	  		<div class="col-sm-12">  			
+	   			<p>[ <a href=javascript:requestListFromUser();>PC목록 다시읽기</a> ]</p>
+	   			<div id="options"></div>
+	   			<table class="table table-hover" id="pc_list">
+			    <thead>
+			      <tr>
+			        <th></th>
+			        <th>이름</th>
+			        <th>IP</th>			        
+			      </tr>
+			    </thead>
+			    <tbody>		      
+			    </tbody>
+			  	</table>	
+	  		</div>
+	 		</div>  	 			 			  	
+  	<div class="row">
+  	<div class="col-sm-12">		   		  		  	
+			<p><div id="myresult"></div></p>        	  							
+   	</div> 
+  	<div class="col-sm-12">		  		    		  		
+  		<div class="row">  				  			
+	  			<div class="col-sm-12">
+	  				<!--//
+	  				<ul class="share-buttons">	  																									  
+													  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://airpage.org/comdown" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://airpage.org/comdown') + '&t=' + encodeURIComponent('http://airpage.org/comdown')); return false;"><img src="images/simple_icons_black/Facebook.png"></a></li>
+													  <li><a href="https://twitter.com/intent/tweet?source=http://airpage.org/comdown"" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent( "Shutdown your PCs, easily - ComDown" ) + ':%20'  + encodeURIComponent('http://airpage.org/comdown')); return false;"><img src="images/simple_icons_black/Twitter.png"></a></li>
+													  <li><a href="https://plus.google.com/share?url=http://airpage.org/comdown" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent('http://airpage.org/comdown')); return false;"><img src="images/simple_icons_black/Google+.png"></a></li>  
+													  <li><a href="http://pinterest.com/pin/create/button/?url=http://airpage.org/comdown" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent('http://airpage.org/comdown') + '&description=' +  encodeURIComponent("Shutdown your PCs, easily - ComDown")); return false;"><img src="images/simple_icons_black/Pinterest.png"></a></li>  													  
+													  <li><div class="fb-like" data-href="http://airpage.org/comdown" data-layout="button_count" data-action="recommend" data-size="small" data-show-faces="false" data-share="false"></div></li>
+					
+						</ul>
+						//-->
+					<h5><a href=http://airpage.org/xe/comdown>설치하기</a> | <a href="./intro/index_ko.html">설명서</a> | <a href="http://airpage.org/xe/airpage_apis_list">오픈 API</a></h5>
+						 <p><div class="fb-like" data-href="https://facebook.com/comdown2017" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false" data-width="250"></div></p>
+				</div>
+			</div>			  		
+  		<div><h5>© 2016-2018 <a href="http://airpage.org">AiRPAGE</a> All rights reserved.</h5></div>
+  	</div>
+  </div>    
+</div>		         
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2386952-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+	var lan_id = 1;
+	$(document).ready(function(){initComdown();});
+</script>
+</body>
+</html>
