@@ -13,7 +13,7 @@ var LANG_DATA = [
 		"msg_off": "Off",
 		"msg_shutting_down" : "... ",
 		"edge_not_support" : "I'm sorry. Edge browser is not supported yet.\nFor this reason, you can turn of only your PC on this browser.\nCould you please use another web browser ?",
-		"msg_need_updated" : "Please, update <a href=/xe/comdown>ComDown Agent</a> on this PC",
+		"msg_need_updated" : "Please, update <a href=https://airpage.org/xe/comdown>ComDown Agent</a> on this PC",
 		"msg_need_updated2" : "Please, update ComDown Agent on this PC",
 		"msg_onoff_times" : "PC ON/OFF Times (In the last month)",
 		"msg_run_times" : "Daily PC operation time (In the last month)",
@@ -22,6 +22,10 @@ var LANG_DATA = [
 		"msg_day" : "Day",
 		"msg_menu_shutdown" : "Shutdown",
 		"msg_menu_reboot" : "Reboot",
+		"msg_menu_screenoff" : "Screen OFF",
+		"msg_menu_logoff" : "LOG OFF",
+		"msg_menu_suspend" : "Suspend Mode",
+		"msg_menu_hibernates" : "Hibernates Mode",
 		"msg_menu_cancel" : "Cancel"
 	},
 	{
@@ -37,7 +41,7 @@ var LANG_DATA = [
 		"msg_off": "종료됨",
 		"msg_shutting_down" : "... ",
 		"edge_not_support" : "죄송합니다.\n현재 EDGE 브라우저는 지원되지 않습니다. 이에, 로컬 PC만 종료가 가능합니다.\n다른 브라우저의 사용을 부탁드립니다.",
-		"msg_need_updated" : "이 PC의 컴다운 에이전트를 <a href=/xe/comdown>업데이트</a> 해 주세요.",
+		"msg_need_updated" : "이 PC의 컴다운 에이전트를 <a href=https://airpage.org/xe/comdown>업데이트</a> 해 주세요.",
 		"msg_need_updated2" : "이 PC의 컴다운 에이전트를 업데이트 해 주세요.",
 		"msg_onoff_times" : "PC ON/OFF 횟수 (최근 한달간)",
 		"msg_run_times" : "일별 PC 사용시간 (최근 한달간)",
@@ -46,6 +50,10 @@ var LANG_DATA = [
 		"msg_day" : "일",
 		"msg_menu_shutdown" : "종료하기",
 		"msg_menu_reboot" : "다시시작하기",
+		"msg_menu_screenoff" : "화면 끄기",
+		"msg_menu_logoff" : "로그오프",
+		"msg_menu_suspend" : "서스팬드 모드",
+		"msg_menu_hibernates" : "하이버네이츠 모드",		
 		"msg_menu_cancel" : "취소"
 	}	
 	];
