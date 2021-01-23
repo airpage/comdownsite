@@ -7,7 +7,7 @@ var LANG_DATA = [
 		"msg_manual" : "manual",
 		"msg_developer" : "developer",
 		"msg_areyousure" : "Are you sure ?",
-		"msg_nopcs" : "There are no PCs in operation.<div class='alert alert-warning'><strong>Tip</strong><br>1. Did you update your Comdown agent for PC to <a href=https://airpage.org/xe/comdown/ target=_top>the latest version</a> ? <br>2. Every devices must be connected to same router as PC.</div>",		
+		"msg_nopcs" : "There are no PCs in operation.<div class='alert alert-warning'><strong>Tip</strong><br>1. Did you update your Comdown agent for PC to <a href=https://airpage.org/xe/comdown/ target=_top>the latest version</a> ? <br>2. All devices MUST be connected to the router to which the PC is connected.</div>",		
 		"msg_pclist_updated" : "PC list is updated",
 		"msg_shutdown_failed_try" : "Failed",
 		"msg_off": "Off",
