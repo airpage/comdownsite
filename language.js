@@ -24,8 +24,8 @@ var LANG_DATA = [
 		"msg_menu_reboot" : "Reboot",
 		"msg_menu_screenoff" : "Screen OFF",
 		"msg_menu_logoff" : "LOG OFF",
-		"msg_menu_suspend" : "Suspend Mode",
-		"msg_menu_hibernates" : "Hibernates Mode",
+		"msg_menu_suspend" : "Suspend",
+		"msg_menu_hibernates" : "Hibernation",
 		"msg_menu_cancel" : "Cancel"
 	},
 	{
@@ -52,8 +52,8 @@ var LANG_DATA = [
 		"msg_menu_reboot" : "다시시작하기",
 		"msg_menu_screenoff" : "화면 끄기",
 		"msg_menu_logoff" : "로그오프",
-		"msg_menu_suspend" : "서스팬드 모드",
-		"msg_menu_hibernates" : "하이버네이츠 모드",		
+		"msg_menu_suspend" : "서스팬드",
+		"msg_menu_hibernates" : "하이버네이션",		
 		"msg_menu_cancel" : "취소"
 	}	
 	];
