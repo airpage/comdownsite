@@ -26,6 +26,7 @@ var LANG_DATA = [
 		"msg_menu_logoff" : "LOG OFF",
 		"msg_menu_suspend" : "Suspend",
 		"msg_menu_hibernates" : "Hibernation",
+		"msg_menu_screenlock" : "Screen Lock",
 		"msg_menu_cancel" : "Cancel"
 	},
 	{
@@ -53,7 +54,8 @@ var LANG_DATA = [
 		"msg_menu_screenoff" : "화면 끄기",
 		"msg_menu_logoff" : "로그오프",
 		"msg_menu_suspend" : "서스팬드",
-		"msg_menu_hibernates" : "하이버네이션",		
+		"msg_menu_hibernates" : "하이버네이션",
+		"msg_menu_screenlock" : "화면 잠그기",
 		"msg_menu_cancel" : "취소"
 	}	
 	];
